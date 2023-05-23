@@ -1,0 +1,93 @@
+---
+title: "tablas de verdad"
+output: html_document
+---
+
+```{r}
+library("BoolNet")
+
+net <- loadNetwork(file = "data/TNFa_subcircuit.csv")
+
+```
+```{r}
+net <- fixGenes(net, "TNFR1", 0)
+state <- net$fixed
+```
+
+```{r}
+state[1:length(state)] <- 0
+
+attr <- getPathToAttractor(network = net, state = state, includeAttractorStates ="all")
+attr
+```
+
+```{r}
+state[1:length(state)] <- 0
+state["TNFa_e"] <- 1
+
+attr <- getPathToAttractor(network = net, state = state, includeAttractorStates = "all")
+attr
+
+```
+
+
+```{r}
+state[1:length(state)] <- 0
+state["IFNb_low"] <- 1
+
+attr <- getPathToAttractor(network = net, state = state, includeAttractorStates = "all")
+attr
+```
+
+
+```{r}
+state[1:length(state)] <- 0
+state[c("IFNb_low","TNFa_e")] <- 1
+
+attr <- getPathToAttractor(network = net, state = state, includeAttractorStates = "all")
+attr
+```
+
+
+IL12 LOOP
+
+
+```{r}
+net <- loadNetwork(file = "data/IL12loop_subcircuit.csv")
+net <- fixGenes(net, c("STAT4","STAT1"), 0)
+state <- net$fixed
+```
+
+```{r}
+state[1:length(state)] <- 0
+state[c("TLR4")] <- 1
+attr <- getPathToAttractor(network = net, state = state, includeAttractorStates = "all")
+attr
+```
+
+```{r}
+net <- loadNetwork(file = "data/IL12loop_subcircuit.csv")
+net <- fixGenes(net, c("IL12R","IFNGR"), 0)
+state <- net$fixed
+state[1:length(state)] <- 0
+state[c("LPS_e")] <- 1
+attr <- getPathToAttractor(network = net, state = state, includeAttractorStates = "all")
+attr
+```
+
+```{r}
+net <- loadNetwork(file = "data/IL12loop_subcircuit.csv")
+#net <- fixGenes(net, c("IL12R","IFNGR"), 0)
+state <- net$fixed
+state[1:length(state)] <- 0
+state[c("LPS_e")] <- 1
+attr <- getPathToAttractor(network = net, state = state, includeAttractorStates = "all")
+attr
+```
+```{r}
+net <- loadNetwork("images/full_network_extended.csv")
+toSBML(network = net, file = "data/full_network_extended.sbml")
+attr <- getAttractors(network = net, method = "sat.restricted", maxAttractorLength = 2)
+attr.table <- attract
+```
+
