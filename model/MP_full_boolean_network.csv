@@ -1,0 +1,65 @@
+targets,factors
+# Update 02-22-2023
+# mir155 fue descartado de la nueva red.
+JMJD3, STAT6 | JMJD3
+IRF4, JMJD3
+HIF1a, ((A2aR & TLR4) | STAT3_IL6)
+ERK, FCGR | TLR4
+IRF3, TLR4
+TRAF2, TNFR
+JNK, NFKB | TLR4 | TRAF2
+KLF4,  STAT6
+SOCS1, STAT1 | STAT6
+PPARG, STAT6
+STAT3_IL6, IL6R
+STAT3_IL10,IL10R & ! FCGR
+SOCS3, (STAT1 | STAT3_IL6 | STAT3_IL10 | STAT6) & ! EGFR_e
+ISGF3, IFNAR1
+NFKB,  (IL1R | TLR4 | FCGR | TRAF2) & ! ( PPARG | STAT3_IL10| KLF4 | SOCS1)
+AP1,JNK
+IRF1, TNFR
+IRF7, ISGF3
+STAT1, (IFNGR) & ! ((SOCS1 & !STAT1)| SOCS3)
+STAT5, CSF2Ra & ! (STAT3_IL10 | SOCS1)
+STAT4, IL12R
+STAT6, IL4Ra & ! (SOCS1 & ! STAT6)
+Other, TLR4
+D1, Other | JNK | ERK
+# Receptores
+FCGR, (IgG_e & LPS_e) | (IgG_e & IL1B_e)
+IL6R,  (IL6_e | IL6_out) & !SOCS3
+TLR4,  LPS_e & ! FCGR
+IL1R,  IL1B_e
+IFNAR1, IFNb_e | IFNb_low | IFNb_out | IFNa_out
+TNFR, TNFa_e | TNFa_out
+IL10R, IL10_e | IL10_out
+IFNGR, IFNG_e | IFNG_out
+A2aR, Adenosine_e
+CSF2Ra, GMCSF_e
+IL4Ra, IL4_e
+IL12R, IL12_e | IL12_out
+# Estimulos
+IFNG_e,IFNG_e
+GMCSF_e,GMCSF_e
+IL1B_e,IL1B_e
+IgG_e,IgG_e
+LPS_e,LPS_e
+Adenosine_e,Adenosine_e
+EGFR_e,EGFR_e
+IL4_e,IL4_e
+IL6_e,IL6_e
+IL10_e,IL10_e
+IFNb_e,IFNb_e
+TNFa_e,TNFa_e
+IL12_e, IL12_e
+# Outs
+IFNb_low, AP1 & NFKB & IRF1
+IFNa_out, STAT1 | IRF7
+IFNG_out, STAT4 | STAT1
+IFNb_out, (NFKB & AP1 & ISGF3) | IRF7 | IRF3
+CXCL10_out, IRF3
+IL12_out,  ((STAT1) |  (STAT5 & NFKB)) & ! STAT3_IL10
+VEGF_out,  HIF1a & ! STAT1
+IL6_out,   (NFKB & STAT3_IL6) | STAT1 | (NFKB & AP1)
+IL10_out,  (STAT3_IL10 | STAT3_IL6 | (PPARG & STAT6) | D1) & ! STAT1
+TNFa_out, NFKB
