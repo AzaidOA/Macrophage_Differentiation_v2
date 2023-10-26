@@ -61,9 +61,11 @@ labelAttractors <- function(attr, label.rules, node.names=NULL, sep="/") {
   res <- list()
 
   for(i in 1:length(attr$attractors)){
+    # AO: Getting the matrix with the involved states
     state <- attr$attractors[[i]]$involvedStates
     # state <- int2binState(state, node.names) #state to binary
     # label <- labelState(state, node.names, label.rules, sep='')
+    # AO: Iterating over each column of matrix (each state)
     label <- sapply(X=seq(ncol(state)), FUN=function(x){
       tmp.state <- int2binState(state[,x], node.names) #state to binary
       tmp.label <- labelState(tmp.state, node.names, label.rules, sep='')

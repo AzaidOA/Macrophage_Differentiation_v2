@@ -28,14 +28,16 @@ int2binState <- function(x, node.names){
   state <- NULL
   # AO: Now the limit is not set by 64 nodes.
   for (i in seq(nrow(x))){
-      tmp.node.len <- ifelse(
-        test=node.len/i < 32,
-        yes=node.len - (i * 32) + 32,
-        no=32
-      )
-      state <- c(state,
-        as.integer(intToBits(x[i,])[1:tmp.node.len])
-      )
+    # AO: Getting the number of nodes of each number.
+    tmp.node.len <- ifelse(
+      test=node.len/i < 32,
+      yes=node.len - (i * 32) + 32,
+      no=32
+    )
+    # AO: Getting the binary state keeping only the same number of digits as nodes.
+    state <- c(state,
+      as.integer(intToBits(x[i,])[1:tmp.node.len])
+    )
   }
   names(state) <- node.names
   return(state)

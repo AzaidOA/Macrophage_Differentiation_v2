@@ -32,7 +32,6 @@
 #' #8         2     7    1  0   1    1    1   0     0    1      0    0
 #'
 #' @export
-#AO Only works for pointed fixed attractors
 attractorToDataframe <- function(attr, sep="/", sep.nodes=';', node.names=NULL, Boolean=FALSE) {
     if (Boolean) {
           if (is(attr, "AttractorInfo")) {
@@ -42,14 +41,15 @@ attractorToDataframe <- function(attr, sep="/", sep.nodes=';', node.names=NULL, 
       }
       if (is.null(node.names)) stop("Invalid node.names")
       ##if (is.list(attr)) { attr <- unlist(attr) }
-      #AO
+      # AO: Separating each of the data frames of the involved states in the form of a list
       attr <- lapply(X=attr$attractors, FUN=function(tmp.attr) tmp.attr$involvedStates)
       df <- data.frame(matrix(ncol=length(node.names)+2, nrow=0))
       for (i in seq(length(attr))) {
-        #Now sttr is a list
+        # Returning data frame of the involved states in each attractor.
         s <- attr[[i]]
         ##if(is.character(s)) s<-unlist(strsplit(s,sep))
         for (j in seq(ncol(s))) {
+          # s[,j] with this i return all rows (nodes) of the corresponding state.
           df <- rbind(df, c(attractor=i,state=j,int2binState(s[,j],node.names)))
         }
       }
@@ -211,10 +211,10 @@ dataframeToAttractor <- function(df, fixedGenes) {
 # AO: the sep.nodes argument is being incorporated to be able to analyze networks with more than 32 nodes.
 aggregateByLabel <- function(df, node.names, label.rules, sep='/', sep.nodes=';') {
   labels <- lapply(rownames(df), function(state) {
-    # Splitting by states.
+    # A0: Splitting by states.
     state <- unlist(strsplit(state, sep))
     label <- lapply(state, function(s) {
-      # Splitting by nodes.
+      # AO: Splitting by nodes.
       state.parts <- as.numeric(unlist(strsplit(s,sep.nodes)))
       l <- labelState(state.parts, node.names, label.rules)
     })
