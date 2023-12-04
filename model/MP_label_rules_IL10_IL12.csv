@@ -1,0 +1,14 @@
+labels,rules
+# Update: It includes 3 more labels M1IL10, M2bIL12, M2dIL12
+M0, !(IL12_out | IL10_out | IL6_out | VEGF_out)
+il6, IL6_out & !(IL12_out | IL10_out | VEGF_out)
+M1,(IL12_out) & ( IL6_out | STAT1 | STAT5 | NFKB | CXCL10_out) & ! (IL10_out | VEGF_out)
+M1IL10,(IL12_out & IL10_out) & ( IL6_out | STAT1 | STAT5 | NFKB | CXCL10_out) & !  (VEGF_out)
+M2,(IL10_out | VEGF_out) & ! (IL12_out)
+a,(IL10_out & STAT6)  & ! ( IL12_out | IL6_out | NFKB | VEGF_out | FCGR)
+b,(IL10_out) & (IL6_out) & ! ( STAT6 | VEGF_out | IL12_out)
+bIL12,(IL10_out) & (IL6_out) & ! ( STAT6 | VEGF_out)
+c,(IL10_out & STAT3_IL10 ) & ! ( IL12_out | IL6_out | NFKB | STAT6 | VEGF_out)
+d,(VEGF_out) & ! (IL12_out | NFKB | STAT6 )
+dIL12,(VEGF_out) & ! ( NFKB | STAT6 )
+M1M2,(IL10_out | VEGF_out) & (IL12_out)
