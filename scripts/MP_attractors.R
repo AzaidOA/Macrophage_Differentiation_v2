@@ -1,7 +1,8 @@
 # Main: MP_attractor.tmp.R
-# Date: 11-06-2023
+# Date: 12-02-2023
 # Update:
-# The output file created by sink() is conditional on interactive jobs only.
+# Environment analysis can now be tagged as appropriate with env.tag
+
 if (!interactive()){
   out.file <- 'scripts/MP_attractors.out'
   sink(out.file)
@@ -65,13 +66,15 @@ cat('### -------------------------- Arguments -------------------------- ###\n')
 # ---> File of the network rules to use.
 net.file <- "model/MP_full_boolean_network.csv"
 # ---> File of the labeling rules to use.
-lab.file <- "model/MP_label_rules.tmp.csv"
+lab.file <- "model/MP_label_rules_IL10_IL12.csv"
 # ---> Maximun size of the attractors.
 attr.len <- 3
 # ---> Environments
 env.file <- "model/MP_M1_environments.csv"
 # ---> Simplied labels.
 replace.labels <- c('M2/M2b'='M2b','M0/M2/M2c'='M2c','il6/M2d'='M2d-like','M1/M2d'='M2d-like','M1/M2/M2d'='M2d-like','M0/M1/M2d'='M2d-like','M0/M1/M2'='Discarded','M0/M2'='M2c','M0/M1'='M1','il6/M2c/M2d'='M2d-like','M1/M2'='Discarded','M1/M2/NoLabel'='Discarded')
+# ---> Enviroment tags.
+env.tag <- 'M1_env'
 
 if(!file.exists(net.file)) stop('The path to the file with the network does not exist!!!')
 if(!file.exists(lab.file)) stop('The path to the file with the label rules does not exist!!!')
@@ -388,6 +391,9 @@ cat('\n')
 
 # ---> Calculating the number of attractors for each of the environments.
 env.attr.file <- "data/MP_env_attr.csv"
+if(!is.null(env.tag)){
+  env.attr.file <- str_replace(env.attr.file, '.csv', paste0('_',env.tag,'.csv'))
+}
 if(!file.exists(env.attr.file)){
   env.attr <- perturbNetworkFixedNodes(net, label.rules=lab, 
                                         genes  = rep( list(colnames(env)), times=nrow(env) ),
@@ -412,6 +418,9 @@ cat('\n')
 
 # ---> Calculating the number of attractors for each of the environments with simplified labels.
 env.attr.r.file <- "data/MP_env_attr_simply.csv"
+if(!is.null(env.tag)){
+  env.attr.r.file <- str_replace(env.attr.r.file, '.csv', paste0('_',env.tag,'.csv'))
+}
 if(!file.exists(env.attr.r.file)){
   env.attr$simply_label <- sapply(env.attr$label, simplifyLabel, replace.labels=replace.labels)
   env.attr$label <- NULL
@@ -428,6 +437,9 @@ cat('\n')
 
 # ---> Plotting a heatmap with the number of attractors obtained in the environments with the simplified labels.
 env.heatmap.file <- "images/MP_env_attr.pdf"
+if(!is.null(env.tag)){
+  env.heatmap.file <- str_replace(env.heatmap.file, '.pdf', paste0('_',env.tag,'.pdf'))
+}
 if(!file.exists(env.heatmap.file)){
   env.attr <- as.data.frame(env.attr)
   rownames(env.attr) <- env.attr$simply_label; env.attr$simply_label <- NULL
@@ -448,6 +460,9 @@ if(!file.exists(env.heatmap.file)){
 
 # ---> Calculating the list of attractors obtained in the environments.
 env.attr.list.file <- "data/MP_env_attr_list.csv"
+if(!is.null(env.tag)){
+  env.attr.list.file <- str_replace(env.attr.list.file, '.csv', paste0('_',env.tag,'.csv'))
+}
 if(!file.exists(env.attr.list.file)){
   env.attr.list <- perturbNetworkFixedNodes(net, label.rules=lab, 
                                           genes  = rep( list(colnames(env)), times=nrow(env) ),
