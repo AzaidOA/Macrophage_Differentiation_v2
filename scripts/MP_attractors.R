@@ -70,11 +70,11 @@ lab.file <- "model/MP_label_rules_IL10_IL12.csv"
 # ---> Maximun size of the attractors.
 attr.len <- 3
 # ---> Environments
-env.file <- "model/MP_M1_environments.csv"
+env.file <- "model/MP_environment.csv"
 # ---> Simplied labels.
 replace.labels <- c('M2/M2b'='M2b','M0/M2/M2c'='M2c','il6/M2d'='M2d-like','M1/M2d'='M2d-like','M1/M2/M2d'='M2d-like','M0/M1/M2d'='M2d-like','M0/M1/M2'='Discarded','M0/M2'='M2c','M0/M1'='M1','il6/M2c/M2d'='M2d-like','M1/M2'='Discarded','M1/M2/NoLabel'='Discarded')
 # ---> Enviroment tags.
-env.tag <- 'M1_env'
+env.tag <- NULL
 
 if(!file.exists(net.file)) stop('The path to the file with the network does not exist!!!')
 if(!file.exists(lab.file)) stop('The path to the file with the label rules does not exist!!!')

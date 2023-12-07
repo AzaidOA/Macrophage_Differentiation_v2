@@ -6,7 +6,7 @@ The functions have been loaded successfully!
 Boolean network to use:  model/MP_full_boolean_network.csv 
 Label rules to use:  model/MP_label_rules_IL10_IL12.csv 
 Maximum length of the attractors to calculate:  3 
-Enviroments to use:  model/MP_M1_environments.csv 
+Enviroments to use:  model/MP_environment.csv 
 ### -------------------------- Loading data -------------------------- ###
 Data loaded successfully!
 ### -------------------------- Attractors analysis -------------------------- ###
@@ -147,8 +147,7 @@ Attractor analysis has been successfully completed!
 Environment has been cleaned up...
 ### ------------- Asynchronous network analysis ------------- ###
 Setting seed for analysis replication:  534234 
-  |                                                          |                                                  |   0%  |                                                          |                                                  |   1%  |                                                          |=                                                 |   1%  |                                                          |=                                                 |   2%  |                                                          |=                                                 |   3%  |                                                          |==                                                |   3%  |                                                          |==                                                |   4%  |                                                          |==                                                |   5%  |                                                          |===                                               |   5%  |                                                          |===                                               |   6%  |                                                          |===                                               |   7%  |                                                          |====                                              |   7%  |                                                          |====                                              |   8%  |                                                          |====                                              |   9%  |                                                          |=====                                             |   9%  |                                                          |=====                                             |  10%  |                                                          |=====                                             |  11%  |                                                          |======                                            |  11%  |                                                          |======                                            |  12%  |                                                          |======                                            |  13%  |                                                          |=======                                           |  13%  |                                                          |=======                                           |  14%  |                                                          |=======                                           |  15%  |                                                          |========                                          |  15%  |                                                          |========                                          |  16%  |                                                          |========                                          |  17%  |                                                          |=========                                         |  17%  |                                                          |=========                                         |  18%  |                                                          |=========                                         |  19%  |                                                          |==========                                        |  19%  |                                                          |==========                                        |  20%  |                                                          |==========                                        |  21%  |                                                          |===========                                       |  21%  |                                                          |===========                                       |  22%  |                                                          |===========                                       |  23%  |                                                          |============                                      |  23%  |                                                          |============                                      |  24%  |                                                          |============                                      |  25%  |                                                          |=============                                     |  25%  |                                                          |=============                                     |  26%  |                                                          |=============                                     |  27%  |                                                          |==============                                    |  27%  |                                                          |==============                                    |  28%  |                                                          |==============                                    |  29%  |                                                          |===============                                   |  29%  |                                                          |===============                                   |  30%  |                                                          |===============                                   |  31%  |                                                          |================                                  |  31%  |                                                          |================                                  |  32%  |                                                          |================                                  |  33%  |                                                          |=================                                 |  33%  |                                                          |=================                                 |  34%  |                                                          |=================                                 |  35%  |                                                          |==================                                |  35%  |                                                          |==================                                |  36%  |                                                          |==================                                |  37%  |                                                          |===================                               |  37%  |                                                          |===================                               |  38%  |                                                          |===================                               |  39%  |                                                          |====================                              |  39%  |                                                          |====================                              |  40%  |                                                          |====================                              |  41%  |                                                          |=====================                             |  41%  |                                                          |=====================                             |  42%  |                                                          |=====================                             |  43%  |                                                          |======================                            |  43%  |                                                          |======================                            |  44%  |                                                          |======================                            |  45%  |                                                          |=======================                           |  45%  |                                                          |=======================                           |  46%  |                                                          |=======================                           |  47%  |                                                          |========================                          |  47%  |                                                          |========================                          |  48%  |                                                          |========================                          |  49%  |                                                          |=========================                         |  49%  |                                                          |=========================                         |  50%  |                                                          |=========================                         |  51%  |                                                          |==========================                        |  51%  |                                                          |==========================                        |  52%  |                                                          |==========================                        |  53%  |                                                          |===========================                       |  53%  |                                                          |===========================                       |  54%  |                                                          |===========================                       |  55%  |                                                          |============================                      |  55%  |                                                          |============================                      |  56%  |                                                          |============================                      |  57%  |                                                          |=============================                     |  57%  |                                                          |=============================                     |  58%  |                                                          |=============================                     |  59%  |                                                          |==============================                    |  59%  |                                                          |==============================                    |  60%  |                                                          |==============================                    |  61%  |                                                          |===============================                   |  61%  |                                                          |===============================                   |  62%  |                                                          |===============================                   |  63%  |                                                          |================================                  |  63%  |                                                          |================================                  |  64%  |                                                          |================================                  |  65%  |                                                          |=================================                 |  65%  |                                                          |=================================                 |  66%  |                                                          |=================================                 |  67%  |                                                          |==================================                |  67%  |                                                          |==================================                |  68%  |                                                          |==================================                |  69%  |                                                          |===================================               |  69%  |                                                          |===================================               |  70%  |                                                          |===================================               |  71%  |                                                          |====================================              |  71%  |                                                          |====================================              |  72%  |                                                          |====================================              |  73%  |                                                          |=====================================             |  73%  |                                                          |=====================================             |  74%  |                                                          |=====================================             |  75%  |                                                          |======================================            |  75%  |                                                          |======================================            |  76%  |                                                          |======================================            |  77%  |                                                          |=======================================           |  77%  |                                                          |=======================================           |  78%  |                                                          |=======================================           |  79%  |                                                          |========================================          |  79%  |                                                          |========================================          |  80%  |                                                          |========================================          |  81%  |                                                          |=========================================         |  81%  |                                                          |=========================================         |  82%  |                                                          |=========================================         |  83%  |                                                          |==========================================        |  83%  |                                                          |==========================================        |  84%  |                                                          |==========================================        |  85%  |                                                          |===========================================       |  85%  |                                                          |===========================================       |  86%  |                                                          |===========================================       |  87%  |                                                          |============================================      |  87%  |                                                          |============================================      |  88%  |                                                          |============================================      |  89%  |                                                          |=============================================     |  89%  |                                                          |=============================================     |  90%  |                                                          |=============================================     |  91%  |                                                          |==============================================    |  91%  |                                                          |==============================================    |  92%  |                                                          |==============================================    |  93%  |                                                          |===============================================   |  93%  |                                                          |===============================================   |  94%  |                                                          |===============================================   |  95%  |                                                          |================================================  |  95%  |                                                          |================================================  |  96%  |                                                          |================================================  |  97%  |                                                          |================================================= |  97%  |                                                          |================================================= |  98%  |                                                          |================================================= |  99%  |                                                          |==================================================|  99%  |                                                          |==================================================| 100%
-Asynchronous attractors have been calculated...
+Asynchronous attractors have been loaded...
        attractor state JMJD3 IRF4 HIF1a ERK IRF3 TRAF2 JNK KLF4 SOCS1 PPARG
     1:         1     1     1    1     1   0    0     1   1    1     1     1
     2:         2     1     1    1     1   0    0     1   1    1     1     1
@@ -234,7 +233,7 @@ Asynchronous attractors have been calculated...
 55935:          M2c
 55936:           M0
 
-Summary of asynchronous attractors has been generated...
+Summary of asynchronous attractors has been loaded...
 Summary of asynchronous attractors:
    label states attractors
 1:    M0      1        600
@@ -246,7 +245,7 @@ Summary of asynchronous attractors:
 7:   M2d      1       4277
 8:   il6      1       9921
 
-Summary of asynchronous attractors with simplified labels has been generated...
+Summary of asynchronous attractors with simplified labels has been loaded...
 Summary of asynchronous attractors:
    label states attractors
 1:    M0      1        600
@@ -261,7 +260,7 @@ Summary of asynchronous attractors:
 Empty data.table (0 rows and 17 cols): state,IL12_out,IL10_out,IL6_out,VEGF_out,STAT1...
 VEGF is being activated due to the IL6 out, trigerring the phenotybe being classified as M2 although it has all the M2b markers, this being cycled due SOCS3 that can inhibit IL6R -> STAT3_IL6 -> VEGF
 
-Transition table between synchronous and asynchronous attractors has been generated...
+Transition table between synchronous and asynchronous attractors has been loaded...
 Transition table:
       syn.lab asyn.lab  freq
  1:        M0       M0    96
@@ -285,171 +284,166 @@ Transition table:
 19: M2d-like*      il6   321
 20:       il6      il6  9600
 
-Alluvial transition between synchronous and asynchronous attractors has been generated...
 Asynchronous network analysis has been successfully completed!
 
 Environment has been cleaned up...
 ### --------------------- Environment analysis --------------------- ###Environments to use:
-                    IFNG_e GMCSF_e LPS_e TNFa_e IgG_e IL1B_e Adenosine_e IL6_e
-IFNG                     1       0     0      0     0      0           0     0
-GMCSF                    0       1     0      0     0      0           0     0
-IFNG-GMCSF               1       1     0      0     0      0           0     0
-LPS                      0       0     1      0     0      0           0     0
-IFNG-LPS                 1       0     1      0     0      0           0     0
-GMCSF-LPS                0       1     1      0     0      0           0     0
-IFNG-GMCSF-LPS           1       1     1      0     0      0           0     0
-TNFa                     0       0     0      1     0      0           0     0
-IFNG-TNFa                1       0     0      1     0      0           0     0
-GMCSF-TNFa               0       1     0      1     0      0           0     0
-IFNG-GMCSF-TNFa          1       1     0      1     0      0           0     0
-LPS-TNFa                 0       0     1      1     0      0           0     0
-IFNG-LPS-TNFa            1       0     1      1     0      0           0     0
-GMCSF-LPS-TNFa           0       1     1      1     0      0           0     0
-IFNG-GMCSF-LPS-TNFa      1       1     1      1     0      0           0     0
-                    IL4_e IL10_e EGFR_e IFNb_e IL12_e
-IFNG                    0      0      0      0      0
-GMCSF                   0      0      0      0      0
-IFNG-GMCSF              0      0      0      0      0
-LPS                     0      0      0      0      0
-IFNG-LPS                0      0      0      0      0
-GMCSF-LPS               0      0      0      0      0
-IFNG-GMCSF-LPS          0      0      0      0      0
-TNFa                    0      0      0      0      0
-IFNG-TNFa               0      0      0      0      0
-GMCSF-TNFa              0      0      0      0      0
-IFNG-GMCSF-TNFa         0      0      0      0      0
-LPS-TNFa                0      0      0      0      0
-IFNG-LPS-TNFa           0      0      0      0      0
-GMCSF-LPS-TNFa          0      0      0      0      0
-IFNG-GMCSF-LPS-TNFa     0      0      0      0      0
+                 IFNG_e GMCSF_e LPS_e IgG_e IL1B_e Adenosine_e IL6_e IL4_e
+pro-M1-IFNG-TNFa      1       0     0     0      0           0     0     0
+pro-M1-IFNG-LPS       1       0     1     0      0           0     0     0
+pro-M1-GMCSF-LPS      0       1     1     0      0           0     0     0
+pro-M1-GMCSF          0       1     0     0      0           0     0     0
+pro-M2a               0       0     0     0      0           0     0     1
+pro-M2b               0       0     1     1      1           0     0     0
+pro-M2c               0       0     0     0      0           0     0     0
+pro-M2d               0       0     1     0      0           1     1     0
+mixed                 1       0     1     0      0           0     0     1
+                 IL10_e EGFR_e IFNb_e TNFa_e IL12_e
+pro-M1-IFNG-TNFa      0      0      0      1      0
+pro-M1-IFNG-LPS       0      0      0      0      0
+pro-M1-GMCSF-LPS      0      0      0      0      0
+pro-M1-GMCSF          0      0      0      0      0
+pro-M2a               0      0      0      0      0
+pro-M2b               0      0      0      0      0
+pro-M2c               1      0      0      0      0
+pro-M2d               0      0      0      0      0
+mixed                 0      0      0      0      0
 
 Number of attractors generated in the environments has been calculated...
 Number of attractors in the environments:
-# A tibble: 9 × 16
-  label    IFNG GMCSF `IFNG-GMCSF`   LPS `IFNG-LPS` `GMCSF-LPS` `IFNG-GMCSF-LPS`
-  <chr>   <dbl> <dbl>        <dbl> <dbl>      <dbl>       <dbl>            <dbl>
-1 M0          0     4            0     0          0           0                0
-2 M0/M0       0     2            0     0          0           0                0
-3 M1          4     4            4     4          4           4                4
-4 M2/M0/…     0     4            0     0          0           0                0
-5 M2c         4     4            4     2          2           2                2
-6 M2c/M2…     0     4            0     0          0           0                0
-7 M2c/M2c     2     2            2     0          0           0                0
-8 M2d/M0…     0     2            0     0          0           0                0
-9 M2d/M2…     0     2            0     0          0           0                0
-# ℹ 8 more variables: TNFa <dbl>, `IFNG-TNFa` <dbl>, `GMCSF-TNFa` <dbl>,
-#   `IFNG-GMCSF-TNFa` <dbl>, `LPS-TNFa` <dbl>, `IFNG-LPS-TNFa` <dbl>,
-#   `GMCSF-LPS-TNFa` <dbl>, `IFNG-GMCSF-LPS-TNFa` <dbl>
+# A tibble: 14 × 10
+   label  `pro-M1-IFNG-TNFa` `pro-M1-IFNG-LPS` `pro-M1-GMCSF-LPS` `pro-M1-GMCSF`
+   <chr>               <dbl>             <dbl>              <dbl>          <dbl>
+ 1 M0                      0                 0                  0              4
+ 2 M0/M0                   0                 0                  0              2
+ 3 M1                      4                 4                  4              4
+ 4 M2                      0                 0                  0              0
+ 5 M2/M0…                  0                 0                  0              4
+ 6 M2a                     0                 0                  0              0
+ 7 M2a/M…                  0                 0                  0              0
+ 8 M2c                     4                 2                  2              4
+ 9 M2c/M…                  0                 0                  0              4
+10 M2c/M…                  2                 0                  0              2
+11 M2d                     0                 0                  0              0
+12 M2d/M…                  0                 0                  0              2
+13 M2d/M…                  0                 0                  0              2
+14 il6                     0                 0                  0              0
+# ℹ 5 more variables: `pro-M2a` <dbl>, `pro-M2b` <dbl>, `pro-M2c` <dbl>,
+#   `pro-M2d` <dbl>, mixed <dbl>
 
 Number of attractors generated in the environments with simplified labels has been calculated...
 Number of attractors in the environments with simplified labels:
-# A tibble: 6 × 16
-  simply_label  IFNG GMCSF `IFNG-GMCSF`   LPS `IFNG-LPS` `GMCSF-LPS`
-  <chr>        <dbl> <dbl>        <dbl> <dbl>      <dbl>       <dbl>
-1 M0               0     4            0     0          0           0
-2 M0*              0     2            0     0          0           0
-3 M1               4     4            4     4          4           4
-4 M2c              4     4            4     2          2           2
-5 M2c*             2    10            2     0          0           0
-6 M2d-like*        0     4            0     0          0           0
-# ℹ 9 more variables: `IFNG-GMCSF-LPS` <dbl>, TNFa <dbl>, `IFNG-TNFa` <dbl>,
-#   `GMCSF-TNFa` <dbl>, `IFNG-GMCSF-TNFa` <dbl>, `LPS-TNFa` <dbl>,
-#   `IFNG-LPS-TNFa` <dbl>, `GMCSF-LPS-TNFa` <dbl>, `IFNG-GMCSF-LPS-TNFa` <dbl>
+# A tibble: 11 × 10
+   simply_label `pro-M1-IFNG-TNFa` `pro-M1-IFNG-LPS` `pro-M1-GMCSF-LPS`
+   <chr>                     <dbl>             <dbl>              <dbl>
+ 1 M0                            0                 0                  0
+ 2 M0*                           0                 0                  0
+ 3 M1                            4                 4                  4
+ 4 M2                            0                 0                  0
+ 5 M2a                           0                 0                  0
+ 6 M2a*                          0                 0                  0
+ 7 M2c                           4                 2                  2
+ 8 M2c*                          2                 0                  0
+ 9 M2d                           0                 0                  0
+10 M2d-like*                     0                 0                  0
+11 il6                           0                 0                  0
+# ℹ 6 more variables: `pro-M1-GMCSF` <dbl>, `pro-M2a` <dbl>, `pro-M2b` <dbl>,
+#   `pro-M2c` <dbl>, `pro-M2d` <dbl>, mixed <dbl>
 
 Heatmap with the number of attractors obtained in the environments with simplified labels has been generated...
 
 The list of attractors obtained in the environments has been calculated...
 List of attractors obtained in the environments:
-             environment attractor state JMJD3 IRF4 HIF1a ERK IRF3 TRAF2 JNK
-  1:                IFNG         1     1     1    1     0   0    0     0   0
-  2:                IFNG         2     1     0    0     0   0    0     0   0
-  3:                IFNG         3     1     0    0     0   0    0     0   0
-  4:                IFNG         4     1     1    1     0   0    0     0   0
-  5:                IFNG         5     1     1    1     0   0    0     0   0
- ---                                                                        
-172: IFNG-GMCSF-LPS-TNFa       132     1     0    0     1   1    1     1   1
-173: IFNG-GMCSF-LPS-TNFa       133     1     1    1     0   1    1     1   1
-174: IFNG-GMCSF-LPS-TNFa       134     1     1    1     1   1    1     1   1
-175: IFNG-GMCSF-LPS-TNFa       135     1     0    0     0   1    1     1   1
-176: IFNG-GMCSF-LPS-TNFa       136     1     1    1     0   1    1     1   1
-     KLF4 SOCS1 PPARG STAT3_IL6 STAT3_IL10 SOCS3 ISGF3 NFKB AP1 IRF1 IRF7 STAT1
-  1:    0     0     0         0          1     1     0    0   0    0    0     0
-  2:    0     0     0         0          1     1     0    0   0    0    0     0
-  3:    0     0     0         0          1     1     1    0   0    0    1     0
-  4:    0     0     0         0          1     1     1    0   0    0    1     0
-  5:    0     1     0         0          0     1     1    0   0    0    1     1
- ---                                                                           
-172:    0     1     0         1          0     1     1    0   1    1    1     1
-173:    0     1     0         0          0     1     1    0   1    1    1     1
-174:    0     1     0         1          0     1     1    0   1    1    1     1
-175:    0     0     0         0          1     1     1    0   1    1    1     0
-176:    0     0     0         0          1     1     1    0   1    1    1     0
+          environment attractor state JMJD3 IRF4 HIF1a ERK IRF3 TRAF2 JNK KLF4
+  1: pro-M1-IFNG-TNFa         1     1     0    0     1   0    0     1   1    0
+  2: pro-M1-IFNG-TNFa         2     1     0    0     0   0    0     1   1    0
+  3: pro-M1-IFNG-TNFa         3     1     0    0     0   0    0     1   1    0
+  4: pro-M1-IFNG-TNFa         4     1     0    0     0   0    0     1   1    0
+  5: pro-M1-IFNG-TNFa         5     1     1    1     0   0    0     1   1    0
+ ---                                                                          
+125:            mixed        88     1     0    0     0   1    1     0   1    0
+126:            mixed        89     1     1    1     0   1    1     0   1    0
+127:            mixed        90     1     1    1     0   1    1     0   1    1
+128:            mixed        91     1     1    1     1   1    1     0   1    1
+129:            mixed        92     1     1    1     0   1    1     0   1    1
+     SOCS1 PPARG STAT3_IL6 STAT3_IL10 SOCS3 ISGF3 NFKB AP1 IRF1 IRF7 STAT1
+  1:     1     0         1          0     1     1    0   1    1    1     1
+  2:     1     0         0          0     1     1    0   1    1    1     1
+  3:     0     0         0          1     1     1    0   1    1    1     0
+  4:     0     0         0          1     1     0    0   1    1    0     0
+  5:     0     0         0          1     1     0    0   1    1    0     0
+ ---                                                                      
+125:     1     0         0          0     1     1    0   1    0    1     1
+126:     1     0         0          0     1     1    0   1    0    1     1
+127:     1     1         0          0     1     1    0   1    0    1     1
+128:     1     1         1          0     1     1    0   1    0    1     1
+129:     1     1         0          1     1     1    0   1    0    1     0
      STAT5 STAT4 STAT6 Other D1 FCGR IL6R TLR4 IL1R IFNAR1 TNFR IL10R IFNGR
-  1:     0     0     0     0  0    0    0    0    0      0    0     1     1
-  2:     0     0     0     0  0    0    0    0    0      0    0     1     1
-  3:     0     0     0     0  0    0    0    0    0      1    0     1     1
-  4:     0     0     0     0  0    0    0    0    0      1    0     1     1
-  5:     0     1     0     0  0    0    1    0    0      1    0     0     1
+  1:     0     1     0     0  1    0    1    0    0      1    1     0     1
+  2:     0     1     0     0  1    0    1    0    0      1    1     0     1
+  3:     0     0     0     0  1    0    0    0    0      1    1     1     1
+  4:     0     0     0     0  1    0    0    0    0      0    1     1     1
+  5:     0     0     0     0  1    0    0    0    0      0    1     1     1
  ---                                                                       
-172:     0     1     0     1  1    0    1    1    0      1    1     0     1
-173:     0     1     0     1  1    0    1    1    0      1    1     0     1
-174:     0     1     0     1  1    0    1    1    0      1    1     0     1
-175:     0     0     0     1  1    0    0    1    0      1    1     1     1
-176:     0     0     0     1  1    0    0    1    0      1    1     1     1
+125:     0     1     0     1  1    0    1    1    0      1    0     0     1
+126:     0     1     0     1  1    0    1    1    0      1    0     0     1
+127:     0     1     1     1  1    0    1    1    0      1    0     0     1
+128:     0     1     1     1  1    0    1    1    0      1    0     0     1
+129:     0     0     1     1  1    0    0    1    0      1    0     1     1
      A2aR CSF2Ra IL4Ra IL12R IFNG_e GMCSF_e IL1B_e IgG_e LPS_e Adenosine_e
-  1:    0      0     0     0      1       0      0     0     0           0
-  2:    0      0     0     0      1       0      0     0     0           0
+  1:    0      0     0     1      1       0      0     0     0           0
+  2:    0      0     0     1      1       0      0     0     0           0
   3:    0      0     0     0      1       0      0     0     0           0
   4:    0      0     0     0      1       0      0     0     0           0
-  5:    0      0     0     1      1       0      0     0     0           0
+  5:    0      0     0     0      1       0      0     0     0           0
  ---                                                                      
-172:    0      1     0     1      1       1      0     0     1           0
-173:    0      1     0     1      1       1      0     0     1           0
-174:    0      1     0     1      1       1      0     0     1           0
-175:    0      1     0     0      1       1      0     0     1           0
-176:    0      1     0     0      1       1      0     0     1           0
+125:    0      0     1     1      1       0      0     0     1           0
+126:    0      0     1     1      1       0      0     0     1           0
+127:    0      0     1     1      1       0      0     0     1           0
+128:    0      0     1     1      1       0      0     0     1           0
+129:    0      0     1     0      1       0      0     0     1           0
      EGFR_e IL4_e IL6_e IL10_e IFNb_e TNFa_e IL12_e IFNb_low IFNa_out IFNG_out
-  1:      0     0     0      0      0      0      0        0        0        0
-  2:      0     0     0      0      0      0      0        0        0        0
-  3:      0     0     0      0      0      0      0        0        1        0
-  4:      0     0     0      0      0      0      0        0        1        0
-  5:      0     0     0      0      0      0      0        0        1        1
+  1:      0     0     0      0      0      1      0        0        1        1
+  2:      0     0     0      0      0      1      0        0        1        1
+  3:      0     0     0      0      0      1      0        0        1        0
+  4:      0     0     0      0      0      1      0        0        0        0
+  5:      0     0     0      0      0      1      0        0        0        0
  ---                                                                          
-172:      0     0     0      0      0      1      0        0        1        1
-173:      0     0     0      0      0      1      0        0        1        1
-174:      0     0     0      0      0      1      0        0        1        1
-175:      0     0     0      0      0      1      0        0        1        0
-176:      0     0     0      0      0      1      0        0        1        0
+125:      0     1     0      0      0      0      0        0        1        1
+126:      0     1     0      0      0      0      0        0        1        1
+127:      0     1     0      0      0      0      0        0        1        1
+128:      0     1     0      0      0      0      0        0        1        1
+129:      0     1     0      0      0      0      0        0        1        0
      IFNb_out CXCL10_out IL12_out VEGF_out IL6_out IL10_out TNFa_out label
-  1:        0          0        0        0       0        1        0   M2c
-  2:        0          0        0        0       0        1        0   M2c
+  1:        1          0        1        0       1        0        0    M1
+  2:        1          0        1        0       1        0        0    M1
   3:        1          0        0        0       0        1        0   M2c
-  4:        1          0        0        0       0        1        0   M2c
-  5:        1          0        1        0       1        0        0    M1
+  4:        0          0        0        0       0        1        0   M2c
+  5:        0          0        0        0       0        1        0   M2c
  ---                                                                      
-172:        1          1        1        0       1        0        0    M1
-173:        1          1        1        0       1        0        0    M1
-174:        1          1        1        0       1        0        0    M1
-175:        1          1        0        0       0        1        0   M2c
-176:        1          1        0        0       0        1        0   M2c
+125:        1          1        1        0       1        0        0    M1
+126:        1          1        1        0       1        0        0    M1
+127:        1          1        1        0       1        0        0    M1
+128:        1          1        1        0       1        0        0    M1
+129:        1          1        0        0       0        1        0   M2a
      simply_label
-  1:          M2c
-  2:          M2c
+  1:           M1
+  2:           M1
   3:          M2c
   4:          M2c
-  5:           M1
+  5:          M2c
  ---             
-172:           M1
-173:           M1
-174:           M1
-175:          M2c
-176:          M2c
+125:           M1
+126:           M1
+127:           M1
+128:           M1
+129:          M2a
 
 Environment analysis has been successfully completed!
 
 Environment has been cleaned up...
 ### --------------------------- Mutants Analysis --------------------------- ###
-Number of attractors of each mutated gene has been calculated...
+Number of attractors of each mutated gene has been loaded...
 Number of attractors of each mutated gene:
            label JMJD3_0 JMJD3_1 IRF4_0 IRF4_1 HIF1a_0 HIF1a_1 ERK_0 ERK_1
   1:          M0      48      48     96     96      96       0    96     0
@@ -632,7 +626,7 @@ Number of attractors of each mutated gene:
 140:         NA         NA
 141:         NA         NA
 
-Number of attractors of each mutated gene with simplified labels has been calculated...
+Number of attractors of each mutated gene with simplified labels has been loaded...
 Number of attractors of each mutated gene with simplified labels:
                simply_label JMJD3_0 JMJD3_1 IRF4_0 IRF4_1 HIF1a_0 HIF1a_1 ERK_0
  1:              Discarded*      NA      NA     NA     NA      NA      NA    NA
@@ -1475,9 +1469,7 @@ Number of attractors of each mutated gene with simplified labels:
 54:        NA        128          0         NA         NA
     IL6_out_1 IL10_out_0 IL10_out_1 TNFa_out_0 TNFa_out_1
 
-Heatmap with the number of attractors obtained of each mutated gene with simplified labels has been generated...
-
-The list of attractors obtained from each mutated gene has been calculated...
+The list of attractors obtained from each mutated gene has been loaded...
 List of attractors obtained from each mutated gene:
              mutant attractor state JMJD3 IRF4 HIF1a ERK IRF3 TRAF2 JNK KLF4
       1:    JMJD3 1         1     1     1    1     0   1    1     0   1    1
@@ -1596,7 +1588,7 @@ loaded via a namespace (and not attached):
  [7] tibble_3.2.1        lifecycle_1.0.4     clue_0.3-65        
 [10] pkgconfig_2.0.3     png_0.1-8           rlang_1.1.2        
 [13] foreach_1.5.2       igraph_1.5.1        cli_3.6.1          
-[16] cluster_2.1.5       generics_0.1.3      vctrs_0.6.4        
+[16] cluster_2.1.6       generics_0.1.3      vctrs_0.6.5        
 [19] GlobalOptions_0.1.2 S4Vectors_0.36.2    IRanges_2.32.0     
 [22] tidyselect_1.2.0    stats4_4.2.3        glue_1.6.2         
 [25] R6_2.5.1            GetoptLong_1.0.5    fansi_1.0.5        
